@@ -1,6 +1,5 @@
 /*Reset*/
 html {
-   -webkit-box-sizing: border-box;
    box-sizing: border-box;
 }
 
@@ -13,7 +12,6 @@ html {
 *,
 *:before,
 *:after {
-   -webkit-box-sizing: inherit;
    box-sizing: inherit;
 }
 
@@ -102,3 +100,33 @@ h6 {
 }
 
 /*--------------------*/
+body {
+   background-color: #111;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   overflow: hidden;
+   margin: 0;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 400px;
+   flex-wrap: wrap;
+}
+
+.square {
+   height: 15px;
+   width: 15px;
+   background: #1d1d1d;
+   margin: 2px;
+   box-shadow: 0 0 2px #000;
+   transition: 2s ease;
+}
+
+.square:hover {
+   transition-duration: 0s;
+}
